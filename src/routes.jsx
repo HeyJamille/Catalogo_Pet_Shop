@@ -5,17 +5,17 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
-import Racao from './components/Racao';
+import Cards from './components/Cards';  // Corrigido para a página correta
 import Blog from './pages/Blog';
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" Component={ Home } />
-      <Route path="/login" Component={ Login } />
-      <Route path="/register" Component={ Register } />
-      <Route path="/racao" Component={ Racao } />
-      <Route path="/blog" Component={ Blog } />
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/:animalName/:section" element={<Cards />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   );
 };
