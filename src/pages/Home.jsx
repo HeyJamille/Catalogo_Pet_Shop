@@ -29,7 +29,7 @@ const Home = () => {
 
       <section className="md:flex flex-row justify-center items-center px-5 py-10 lg:px-20 ">
         <h1 className="mb-[50px] p-5 pt-10 text-center md:w-[40%] lg:text-[25px] lg:p-14">Junte-se ao melhor Pet Shop de Fortaleza e dê ao seu pet o que há de melhor!</h1>
-        <img className=" h-[300px] w-full sm:h-[400px] md:w-[60%] md:h-[500px]" src={bannerImage} alt="Banner" />
+        <img className=" h-[250px] w-full sm:h-[400px] md:w-[60%] md:h-[500px]" src={bannerImage} alt="Banner" />
       </section>
 
       <section className="flex flex-col justify-center items-center px-5 py-10 lg:px-20 bg-custom-radial">
