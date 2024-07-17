@@ -4,6 +4,9 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+// Icon
+import { MdArrowOutward } from "react-icons/md";
+
 // Pages
 import Blog from '../pages/Blog';
 
@@ -14,7 +17,7 @@ import Button from '../components/ui/Btn';
 import veterinaria from '../assets/Home/veterinaria.jpg'
 import banho_tosa from '../assets/Home/banho_tosa.jpeg'
 import produtos from '../assets/Home/produtos.jpeg'
-import bannerImage from '../assets/Main/banner.jpeg'; 
+import bannerImage from '../assets/Main/cat.png'; 
 
 const Home = () => {
   const offer = [
@@ -27,9 +30,20 @@ const Home = () => {
     <article>
       <Header />
 
-      <section className="md:flex flex-row justify-center items-center px-5 py-10 lg:px-20 ">
-        <h1 className="mb-[50px] p-5 pt-10 text-center md:w-[40%] lg:text-[25px] lg:p-14">Junte-se ao melhor Pet Shop de Fortaleza e dê ao seu pet o que há de melhor!</h1>
-        <img className=" h-[250px] w-full sm:h-[400px] md:w-[60%] md:h-[500px]" src={bannerImage} alt="Banner" />
+      <section className="flex flex-row justify-center md:justify-evenly items-center gap-2 px-5 py-10 lg:px-20 h-screen ">
+        <div className="flex flex-col gap-2 md:w-[40%]">
+          <h1 className="text-[30px] text-pink-500">TUDO O QUE SEU PET PRECISA EM UM SÓ LUGAR!</h1>
+          <p>Descubra uma vasta seleção de produtos e serviços para garantir que seu amigo de quatro patas tenha uma vida feliz e saudável.</p>
+
+          <div className="flex flex-row gap-2 lg:gap-5 justify-center items-center mt-5 sm:justify-start">   
+            <Button className="inline-block">
+              Nossos Serviçoes
+              <MdArrowOutward className="hidden sm:inline-block sm:ml-2"/>
+            </Button>
+            <button className="hover:bg-[#ffc0cb] rounded-lg p-2 transition-all duration-700 ease-in-out ">Nossos Contatos</button>
+          </div>
+        </div>
+        <img className="hidden md:block md:h-[500px] md:w-auto bg-[#ffc0cb] rounded-full" src={bannerImage} alt="Banner" />
       </section>
 
       <section className="flex flex-col justify-center items-center px-5 py-10 lg:px-20 bg-custom-radial">

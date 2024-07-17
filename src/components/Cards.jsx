@@ -49,7 +49,7 @@ const Cards = () => {
               <p className=" text-gray-600">R$ {product.price}</p>
             </div>
 
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 mb-4">
               <p>Quantidade:</p>
               <input className="w-[50%]" type="number" min="1" defaultValue="1" />
             </div>

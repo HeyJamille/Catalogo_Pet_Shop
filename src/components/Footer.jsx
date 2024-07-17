@@ -1,21 +1,26 @@
 import React from 'react'
 
-const Footer = () => {
-  const footer = [
-    { title: 'INÍCIO', option_1: 'Home', option_2: 'Categorias' },
-    { title: 'SOBRE NÓS', option_1: 'Sobre o Site', option_2: 'Sobre a Empresa' },
-    { title: 'SUPORTE', option_1: 'Contatos', option_2: 'Dúvidas' }
-  ];
+// Icons
+import { SiGmail } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 
+const Footer = () => {
   return (
-    <footer className="flex flex-row justify-center align-center gap-5 sm:gap-14 p-5 lg:px-20 bg-custom-radial">
-      {footer.map((footer, index) => (
-        <section key={index} className="flex flex-col"> 
-          <p className="mb-2">{footer.title}</p>
-          <a href="#menu">{footer.option_1}</a>
-          <a href="#frase_main">{footer.option_2}</a>
-        </section>
-      ))}
+    <footer className="flex flex-col justify-center items-center p-5 lg:px-20 bg-custom-radial">
+      <section className="flex flex-row gap-5 mb-5"> 
+        <SiGmail className="text-[30px] rounded-lg bg-white h-[40px] w-[40px] p-2 hover:-translate-y-1 hover:scale-100 duration-300"/>        
+        <FaPhoneAlt className="text-[30px] rounded-lg bg-white h-[40px] w-[40px] p-2 hover:-translate-y-1 hover:scale-100 duration-300"/>
+        <BsWhatsapp className="text-[30px] rounded-lg bg-white h-[40px] w-[40px] p-2 hover:-translate-y-1 hover:scale-100 duration-300"/>
+      </section>
+      <section className="flex flex-row text-center gap-2">
+        <p>Info</p>
+        <p>.</p>
+        <p>Suporte</p>
+        <p>.</p>
+        <p>Marketing</p>
+      </section>
+      <p>@ 2024 Jamille Araujo</p>
     </footer>
   )
 }

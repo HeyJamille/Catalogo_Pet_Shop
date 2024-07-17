@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 
 // Data
-import { DataRacaoCachorro, DataRacaoGato } from '../utils/DataRacao';
-import { DataFarmaciaCachorro, DataFarmaciaGato } from '../utils/DataFarmacia';
+import { DataRacaoCachorro, DataRacaoGato, DataRacaoPeixe, DataRacaoPassaro } from '../utils/DataRacao';
+import { DataFarmaciaCachorro, DataFarmaciaGato, DataFarmaciaPeixe, DataFarmaciaPassaro } from '../utils/DataFarmacia';
 
 // Assets
 import carrinho from '../assets/Header/carrinho.png';
@@ -41,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row justify-between p-5 bg-custom-radial lg:px-20">
+    <header className="flex flex-row justify-between py-5 mx-5 border-b-2 lg:mx-20 ">
       <div className="flex flex-row gap-5 justify-center items-center"> 
         <RxHamburgerMenu className="text-[40px] cursor-pointer md:hidden" />
         <h1 className="hidden sm:block">AMIGO PET</h1>
